@@ -62,4 +62,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'ziv'  # Your Azure Web App name
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D7BB6CECA85E40D793674E429A0F30D4 }}  # Your Azure publish profile
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}  # Your Azure publish profile secret
+          package: .
